@@ -54,7 +54,7 @@ Released   : 20130801
 				<h2>Ready To Navigate</h2>
 			</div>
 						<div id="rtn-container" style="min-width: 210px; height: 200px; max-width: 300px; margin: 0 auto"></div>
-			<a href="rtn-php" class="button">More Info</a> </div>
+			<a href="rtn.php" class="button">More Info</a> </div>
 		<div id="tbox3"> <span class="icon icon-map-marker"></span>
 			<div class="title">
 				<h2>Navigate</h2>
