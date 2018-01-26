@@ -32,9 +32,9 @@ Released   : 20130801
 <div id="wrapper" class="container">
 	<div id="menu" class="container">
 		<ul>
-			<li><a href="index.php" accesskey="1" title="">Homepage</a></li>
+			<li><a href="index.php" accesskey="1" title="">Home</a></li>
 			<li><a href="rti.php" accesskey="1" title="">RTI</a></li>
-			<li><a href="rtn.php" accesskey="2" title="">RTN</a></li>
+			<li><a href="status.php" accesskey="2" title="">Status</a></li>
 			<li><a href="navigate.php" accesskey="3" title="">Navigate</a></li>
 			<li class="current_page_item"><a href="businessStrategy.php" accesskey="4" title="">Business Strategy</a></li>
 			<li><a href="openOrganisation.php" accesskey="5" title="">Open Organisation</a></li>

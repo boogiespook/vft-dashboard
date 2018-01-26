@@ -32,9 +32,9 @@ Released   : 20130801
 <div id="wrapper" class="container">
 	<div id="menu" class="container">
 		<ul>
-			<li><a href="index.php" accesskey="1" title="">Homepage</a></li>
+			<li><a href="index.php" accesskey="1" title="">Home</a></li>
 			<li><a href="rti.php" accesskey="1" title="">RTI</a></li>
-			<li><a href="rtn.php" accesskey="2" title="">RTN</a></li>
+			<li><a href="status.php" accesskey="2" title="">Status</a></li>
 			<li><a href="navigate.php" accesskey="3" title="">Navigate</a></li>
 			<li><a href="businessStrategy.php" accesskey="4" title="">Business Strategy</a></li>
 			<li><a href="openOrganisation.php" accesskey="5" title="">Open Organisation</a></li>
@@ -47,9 +47,14 @@ Released   : 20130801
 				<h2>Allocations</h2>
 			</div>
 
-<p>Lorem ipsum dolor sit amet, prima rationibus quo id. Alia decore equidem at usu, voluptatum definitionem id vis. Habeo homero quodsi pro ex, his id audiam quaerendum, singulis qualisque usu et. An alii vocibus facilisis vis, has an mazim deleniti. Commodo iuvaret splendide mel id, case interesset intellegebat pri cu. Ius ea quot ceteros definitionem.
+<p>
+<?php 
+include 'getAllAllocations.php';
+include 'googleClient.php';
+getAllAllocations();
+?>
 </p>
-
+<h4><a href='https://docs.google.com/spreadsheets/d/1UUmhWQVOjy3lpWlOgTBfdShnA1TgQWarQWOoYW1I0yk/edit#gid=0'>Link to Spreadsheet</a></h4>
 </div>
 
 

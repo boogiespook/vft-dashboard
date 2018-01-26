@@ -7,7 +7,7 @@
 	{
 		margin: 0px;
 		padding: 0px;
-		background: #E9E9E9 url(images/bg01.png) repeat;
+		background: #FFFFFF ;
       font-family: 'overpass', sans-serif;
 		font-size: 11pt;
 		font-weight: 400;
@@ -56,6 +56,7 @@
 	{
 		margin: 0px auto 0px auto;
 		width: 1200px;
+		background: #FFFFFF ;
 		
 	}
 	
@@ -164,7 +165,7 @@
 	{
 		display: inline-block;
 		margin-top: 1em;
-		background: #00A4D9;
+		background: #820000;
 		border-radius: 4px;
 		line-height: 1.5em;
 		padding: 0 3em;
@@ -185,7 +186,7 @@
 
 		.button:hover
 		{
-			background: #18ACD9;
+			background: #CC0000;
 			-webkit-transition: all .25s ease-in-out;
 			-moz-transition: all .25s ease-in-out;
 			-ms-transition: all .25s ease-in-out;
@@ -218,7 +219,7 @@
 	{
 		position: relative;
 		padding: 0em 0em 5em 0em;
-		background: #FFF;
+		background: #FFFFFF;
 		box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
 	}
 
@@ -230,6 +231,11 @@
 	{
 		height: 10em;
 	}
+
+   #shadowman
+   {
+	float:left;   
+   }
 
 /*********************************************************************************/
 /* Logo                                                                          */
@@ -244,7 +250,7 @@
 	#logo h1
 	{
 		font-size: 2.2em;
-		color: #292929;
+		color: #820000;
 	}
 	
 	#logo h1 a
@@ -252,12 +258,12 @@
 		margin-left: 0.50em;
 		text-decoration: none;
 		font-size: 1.5em;
-		color: #292929;
+		color: #A30000;
 	}
 	
 	#logo span
 	{
-		color: #01A9DC;
+		color: #CC0000;
 	}
 
 	#logo .icon-size
@@ -321,7 +327,7 @@
 	
 	#menu .current_page_item a
 	{
-		background: #01A9DC;
+		background: #CC0000;
 		color: #FFF;
 	}
 	
@@ -361,7 +367,7 @@
 	{
 		padding: 3em 0em;
 		letter-spacing: 0.10em;
-		text-transform: uppercase;
+
 	}
 	
 	#page .title h2
@@ -459,7 +465,7 @@
 	{
 		overflow: hidden;
 		text-align: center;
-		color: #525252;
+		color: #004153;
 		
 	}
 	
@@ -469,7 +475,7 @@
 		text-transform: uppercase;
 		font-size: 0.5em;
 		font-weight: 400;
-		color: #454445;
+		color: #004153;
 	}
 	
 	#three-column .icon
@@ -483,9 +489,9 @@
 		width: 90px;
 		height: 100px;
 		border-radius: 100px;
-		border: 0px solid #00A4D9;
+		border: 0px solid #004153;
 		text-align: center;
-		color: #00A4D9;
+		color: #004153;
 	}
 		
 	#three-column #tbox1,
@@ -497,7 +503,7 @@
 		padding: 0px 20px 10px 20px;
 		border-radius: 100px;
 		margin: 10px 0.50em 0.0em 0.50em;
-		border: 1px solid #00A4D9;
+		border: 1px solid #004153;
 
 	}
 	
@@ -513,7 +519,7 @@
 		font-size: 1.00em;
 		font-weight: 900;
 		font-family: 'overpass', sans-serif;
-		color: #00A4D9;
+		color: #4C4C4C;
 	}
 	
 	#three-column .title .byline
@@ -537,7 +543,7 @@
 	{
 		overflow: hidden;
 		text-align: center;
-		color: #525252;
+		color: #4C4C4C;
 		margin: 0 auto;
 		
 	}
@@ -564,7 +570,7 @@
 		border-radius: 100px;
 		border: 0px solid #00A4D9;
 		text-align: center;
-		color: #00A4D9;
+		color: #4C4C4C;
 	}
 		
 	#one-column #tbox1a,
@@ -590,10 +596,10 @@
 	
 	#one-column .title h2
 	{
-		font-size: 1.00em;
+		font-size: 1.50em;
 		font-weight: 900;
 		font-family: 'overpass', sans-serif;
-		color: #00A4D9;
+		color: #4C4C4C;
 	}
 	
 	#one-column .title .byline
@@ -608,7 +614,24 @@
 		border-top-color: #292929;
 	}
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto; /* or margin: 0 auto 0 auto */
 
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #A30000;
+    color: white;
+}
 
 
 
