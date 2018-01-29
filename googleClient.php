@@ -14,7 +14,8 @@ define('SCOPES', implode(' ', array(
   $client = new Google_Client();
   $client->setApplicationName(APPLICATION_NAME);
   $client->setScopes(SCOPES);
-  $client->setAuthConfig(CLIENT_SECRET_PATH);
+  #$client->setAuthConfig(CLIENT_SECRET_PATH);
+  $client->setAuthConfig('config2/client_secret.json');
   $client->setAccessType('offline');
 
   // Load previously authorized credentials from a file.
