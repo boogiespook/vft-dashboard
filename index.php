@@ -68,7 +68,7 @@ include 'getProjectStatus.php';
 				<h2>Project Status</h2>
 			</div>
                <div id="status-container" style="min-width: 210px; height: 200px; max-width: 300px; margin: 0 auto"></div>
-				<p>Total Revenue: <b><?php getTotalRevenue(); ?> </b></p>	
+				<p>Total: <b><?php getTotalRevenue(); ?> </b></p>	
 			<a href="status.php" class="button">More Info</a> </div>
 		<div id="tbox3"> <span class="icon icon-map-marker"></span>
 			<div class="title">
@@ -114,7 +114,7 @@ Highcharts.chart('rti-container', {
         type: 'pie'
     },
     title: {
-        text: 'By Line of Business'
+        text: 'By Country'
     },
     tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -133,27 +133,9 @@ Highcharts.chart('rti-container', {
         }
     },
     series: [{
-        name: 'LoB',
+        name: 'Country',
         colorByPoint: true,
-        data: [{
-            name: 'Finance',
-            y: 45
-        }, {
-            name: 'IT',
-            y: 26,
-        }, {
-            name: 'Government',
-            y: 10.38
-        }, {
-            name: 'Telco',
-            y: 4.77
-        }, {
-            name: 'Retail',
-            y: 0.91
-        }, {
-            name: 'Manufacturing',
-            y: 0.2
-        }]
+        data: <?php include 'getLiveRTI.php'; getLiveRTI('country'); ?>
     }]
 });
 </script>
