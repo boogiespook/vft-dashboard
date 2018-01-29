@@ -3,8 +3,8 @@ function getClient() {
 require_once __DIR__ . '/vendor/autoload.php';	
 
 define('APPLICATION_NAME', 'vftOverview');
-define('CREDENTIALS_PATH', '/config/sheets.googleapis.com-php-quickstart.json');
-define('CLIENT_SECRET_PATH','/config2/client_secret.json');
+define('CREDENTIALS_PATH', 'config/sheets.googleapis.com-php-quickstart.json');
+define('CLIENT_SECRET_PATH','config2/client_secret.json');
 define('SCOPES', implode(' ', array(
   Google_Service_Sheets::SPREADSHEETS_READONLY)
 ));
