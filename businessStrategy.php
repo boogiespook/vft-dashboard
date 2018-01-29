@@ -26,7 +26,10 @@ Released   : 20130801
 </head>
 <body>
 <div id="logo" class="container">
-	<h1><a href="#">VfT<span>Dashboard</span></a></h1>
+<div id="shadowman">
+	<img src="images/red_hat_logo_small.png">
+</div>
+	<h1><a href="#">VfT<span>&nbsp Dashboard</span></a></h1>
 
 </div>
 <div id="wrapper" class="container">
