@@ -4,7 +4,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 define('APPLICATION_NAME', 'vftOverview');
 define('CREDENTIALS_PATH', 'config/sheets.googleapis.com-php-quickstart.json');
-define('CLIENT_SECRET_PATH','config2/client_secret.json');
+define('CLIENT_SECRET_PATH','config2/google-services.json');
 define('SCOPES', implode(' ', array(
   Google_Service_Sheets::SPREADSHEETS_READONLY)
 ));
@@ -15,7 +15,7 @@ var_dump(CLIENT_SECRET_PATH);
   $client->setApplicationName(APPLICATION_NAME);
   $client->setScopes(SCOPES);
   #$client->setAuthConfig(CLIENT_SECRET_PATH);
-  $client->setAuthConfig('config2/client_secret.json');
+  $client->setAuthConfig('config2/google-services.json');
   $client->setAccessType('offline');
 
   // Load previously authorized credentials from a file.
