@@ -9,7 +9,7 @@ define('SCOPES', implode(' ', array(
   Google_Service_Sheets::SPREADSHEETS_READONLY)
 ));
 
-
+var_dump(CLIENT_SECRET_PATH);
 	
   $client = new Google_Client();
   $client->setApplicationName(APPLICATION_NAME);
@@ -19,7 +19,8 @@ define('SCOPES', implode(' ', array(
   $client->setAccessType('offline');
 
   // Load previously authorized credentials from a file.
-  $credentialsPath = expandHomeDirectory(CREDENTIALS_PATH);
+  #$credentialsPath = expandHomeDirectory(CREDENTIALS_PATH);
+  $credentialsPath = CREDENTIALS_PATH;
   if (file_exists($credentialsPath)) {
     $accessToken = json_decode(file_get_contents($credentialsPath), true);
   } else {
