@@ -49,12 +49,49 @@ Released   : 20130801
 			<div class="title">
 				<h2>Ready To Innovate</h2>
 			</div>
-<p>Lorem ipsum dolor sit amet, prima rationibus quo id. Alia decore equidem at usu, voluptatum definitionem id vis. Habeo homero quodsi pro ex, his id audiam quaerendum, singulis qualisque usu et. An alii vocibus facilisis vis, has an mazim deleniti. Commodo iuvaret splendide mel id, case interesset intellegebat pri cu. Ius ea quot ceteros definitionem.
+<p>
+<h3>General Statistics</h3>
+
+ 			<div id="rti-container" style="min-width: 800px; height: 800px; max-width: 800px; margin: 0 auto"></div>
+</p>
 </p>
 
 </div>
 </div>
 
-
+<script type="text/javascript" >
+Highcharts.chart('rti-container', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: 'Results By Country'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                }
+            }
+        }
+    },
+    series: [{
+        name: 'Status',
+        colorByPoint: true,
+        data: <?php include 'getLiveRTI.php'; getLiveRTI('country'); ?>
+    }]
+});
+</script>
 </body>
 </html>
