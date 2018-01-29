@@ -9,7 +9,7 @@ define('SCOPES', implode(' ', array(
   Google_Service_Sheets::SPREADSHEETS_READONLY)
 ));
 
-var_dump(CLIENT_SECRET_PATH);
+#var_dump(CLIENT_SECRET_PATH);
 	
   $client = new Google_Client();
   $client->setApplicationName(APPLICATION_NAME);
