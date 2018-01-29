@@ -10,7 +10,7 @@ define('SCOPES', implode(' ', array(
 session_start();
 
 $client = new Google_Client();
-$client->setAuthConfig('client_secret.json');
+$client->setAuthConfig('config2/client_secret.json');
 $client->addScope(Google_Service_Drive::DRIVE_METADATA_READONLY);
 $client->setScopes(SCOPES);
 $client->setDeveloperKey("MiityYPb_IWJ9J9wdeUIPQcZLGwYDUKkk");
